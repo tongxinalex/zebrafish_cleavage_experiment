@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "xint-toolbox"
+version = "0.1.0"
+description = "Xin's useful functions"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "xintonic", email = "tongxinalex@outlook.com" }]
+keywords = ["math", "physics", "biology", "image processing"]
+dependencies = []  # keep it zero-dep; you can add "numpy>=1.26" if you need it
+
+[project.urls]
+Homepage = "https://example.com/xint-toolbox"
+Issues = "https://example.com/xint-toolbox/issues"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
